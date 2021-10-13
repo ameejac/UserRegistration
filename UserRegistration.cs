@@ -11,10 +11,13 @@ namespace UserRegistrationDemo
     {
         //Uc1 FirstName
         //writing the valid pattern
-        string pattern = "^[A-Z]{1}[a-z]{2,15}$"; 
-                                                 
+        //string pattern = "^[A-Z]{1}[a-z]{2,15}$";
+
+        //uc2 FirstName and user needs to add the LastName
+        string pattern = "^[A-Z]{1}[a-z]{2,30}[ ]*[A-Z]{1}[a-z]{2,20}$";
+
         //Validating examples
-        string[] inputs = { "Jaan","Xyz", "jaan", "Ameeja", "Abcdef","ameena", "Rehan", "rehan"};
+        string[] inputs = { "Jaan Cherukuru","Xyz Abc", "jaan cherukuru", "Ameeja Cherukuru", "Abcdef abcsd","reshma cherurukuru", "Reshma Cherukuru", "touhid cherukuru"};
 
         /// <summary>
         /// Verifying the process
